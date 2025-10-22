@@ -1,11 +1,79 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { SingleQRGenerator } from "@/components/SingleQRGenerator";
+import { BulkQRGenerator } from "@/components/BulkQRGenerator";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { QrCode } from "lucide-react";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <div className="min-h-screen bg-gradient-subtle">
+      <div className="container mx-auto px-4 py-12">
+        <div className="text-center mb-12 space-y-4">
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <QrCode className="h-12 w-12 text-primary" />
+            <h1 className="text-5xl font-bold bg-gradient-ocean bg-clip-text text-transparent">
+              Generador de QR
+            </h1>
+          </div>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            Crea códigos QR para tus reservas de hotel y facilita las reseñas de tus huéspedes
+          </p>
+        </div>
+
+        <Tabs defaultValue="single" className="max-w-4xl mx-auto">
+          <TabsList className="grid w-full grid-cols-2 mb-8">
+            <TabsTrigger value="single" className="text-lg">
+              QR Individual
+            </TabsTrigger>
+            <TabsTrigger value="bulk" className="text-lg">
+              Generación Masiva
+            </TabsTrigger>
+          </TabsList>
+          
+          <TabsContent value="single" className="animate-in fade-in duration-500">
+            <SingleQRGenerator />
+          </TabsContent>
+          
+          <TabsContent value="bulk" className="animate-in fade-in duration-500">
+            <BulkQRGenerator />
+          </TabsContent>
+        </Tabs>
+
+        <div className="mt-16 text-center">
+          <div className="max-w-3xl mx-auto p-8 bg-card rounded-2xl shadow-card border-2">
+            <h2 className="text-2xl font-bold mb-4 text-foreground">
+              ¿Cómo funciona?
+            </h2>
+            <div className="grid md:grid-cols-3 gap-6 text-left">
+              <div className="space-y-2">
+                <div className="w-12 h-12 rounded-full bg-gradient-ocean flex items-center justify-center text-white font-bold text-xl mb-2">
+                  1
+                </div>
+                <h3 className="font-semibold text-lg">Ingresa los datos</h3>
+                <p className="text-muted-foreground">
+                  Completa la información de la reserva o sube un archivo CSV/Excel
+                </p>
+              </div>
+              <div className="space-y-2">
+                <div className="w-12 h-12 rounded-full bg-gradient-ocean flex items-center justify-center text-white font-bold text-xl mb-2">
+                  2
+                </div>
+                <h3 className="font-semibold text-lg">Genera el QR</h3>
+                <p className="text-muted-foreground">
+                  El sistema crea automáticamente el código QR con el enlace de Booking.com
+                </p>
+              </div>
+              <div className="space-y-2">
+                <div className="w-12 h-12 rounded-full bg-gradient-ocean flex items-center justify-center text-white font-bold text-xl mb-2">
+                  3
+                </div>
+                <h3 className="font-semibold text-lg">Descarga y comparte</h3>
+                <p className="text-muted-foreground">
+                  Descarga el QR y compártelo con tus huéspedes para que dejen su reseña
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
