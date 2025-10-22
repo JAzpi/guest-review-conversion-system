@@ -10,7 +10,7 @@ const Index = () => {
         <div className="text-center mb-12 space-y-4">
           <div className="flex items-center justify-center gap-3 mb-4">
             <QrCode className="h-12 w-12 text-primary" />
-            <h1 className="text-5xl font-bold bg-gradient-ocean bg-clip-text text-transparent">
+            <h1 className="text-5xl font-bold bg-gradient-primary bg-clip-text text-transparent">
               Generador de QR
             </h1>
           </div>
@@ -45,7 +45,7 @@ const Index = () => {
             </h2>
             <div className="grid md:grid-cols-3 gap-6 text-left">
               <div className="space-y-2">
-                <div className="w-12 h-12 rounded-full bg-gradient-ocean flex items-center justify-center text-white font-bold text-xl mb-2">
+                <div className="w-12 h-12 rounded-full bg-gradient-primary flex items-center justify-center text-white font-bold text-xl mb-2">
                   1
                 </div>
                 <h3 className="font-semibold text-lg">Ingresa los datos</h3>
@@ -54,7 +54,7 @@ const Index = () => {
                 </p>
               </div>
               <div className="space-y-2">
-                <div className="w-12 h-12 rounded-full bg-gradient-ocean flex items-center justify-center text-white font-bold text-xl mb-2">
+                <div className="w-12 h-12 rounded-full bg-gradient-primary flex items-center justify-center text-white font-bold text-xl mb-2">
                   2
                 </div>
                 <h3 className="font-semibold text-lg">Genera el QR</h3>
@@ -63,7 +63,7 @@ const Index = () => {
                 </p>
               </div>
               <div className="space-y-2">
-                <div className="w-12 h-12 rounded-full bg-gradient-ocean flex items-center justify-center text-white font-bold text-xl mb-2">
+                <div className="w-12 h-12 rounded-full bg-gradient-primary flex items-center justify-center text-white font-bold text-xl mb-2">
                   3
                 </div>
                 <h3 className="font-semibold text-lg">Descarga y comparte</h3>

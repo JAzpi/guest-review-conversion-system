@@ -59,8 +59,8 @@ export default {
         },
       },
       backgroundImage: {
-        'gradient-ocean': 'var(--gradient-ocean)',
-        'gradient-warm': 'var(--gradient-warm)',
+        'gradient-primary': 'var(--gradient-primary)',
+        'gradient-secondary': 'var(--gradient-secondary)',
         'gradient-subtle': 'var(--gradient-subtle)',
       },
       boxShadow: {
