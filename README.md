@@ -1,73 +1,80 @@
-# Welcome to your Lovable project
+# QR My Stay — Guest Review Conversion System for Hospitality
 
-## Project info
+## Context
 
-**URL**: https://lovable.dev/projects/6740c0cb-59da-4e63-bf19-1a07e159b9eb
+Online Travel Agencies (OTAs) heavily depend on guest reviews to determine ranking, visibility, and booking conversion. However, many satisfied guests never leave reviews due to friction in the process.
 
-## How can I edit this code?
+This project explores how reducing friction between stay and review can increase guest review generation and improve OTA performance.
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## The Problem
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/6740c0cb-59da-4e63-bf19-1a07e159b9eb) and start prompting.
+Low review conversion creates:
 
-Changes made via Lovable will be committed automatically to this repo.
+- Lower OTA ranking and visibility
+- Reduced booking conversion
+- Weak reputation signal
+- Lost revenue potential
 
-**Use your preferred IDE**
+Even small improvements in review generation can produce compounding visibility and revenue effects.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## The Solution
 
-Follow these steps:
+QR My Stay is a system designed to simplify the path from stay to review.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+The approach:
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+1. Generate a personalized QR per reservation
+2. Allow guests to scan during or after their stay
+3. Redirect directly to their booking / review page
+4. Reduce friction → Increase probability of review generation
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## How It Works
 
-**Edit a file directly in GitHub**
+Reservation → QR Generated → Guest Scan → Direct Review Access → Higher Review Conversion → Improved OTA Ranking
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+The system focuses on **timing, simplicity, and friction reduction** in the guest journey.
 
-**Use GitHub Codespaces**
+---
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Business Impact
 
-## What technologies are used for this project?
+This system can:
 
-This project is built with:
+- Increase guest review conversion
+- Improve OTA ranking and visibility
+- Strengthen hotel reputation
+- Increase booking conversion
+- Potentially generate measurable revenue uplift
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
+## Tech Stack
 
-Simply open [Lovable](https://lovable.dev/projects/6740c0cb-59da-4e63-bf19-1a07e159b9eb) and click on Share -> Publish.
+- Python
+- QR Code generation
+- URL handling
+- CSV / Excel processing
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
+## Future Improvements
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+- AI-based timing optimization for review activation
+- Smart guest lifecycle automation
+- Sentiment-aware triggering
+- PMS / CRM integration
+- Review conversion analytics dashboard
+- Automated guest communication workflows
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+---
+
+## Positioning
+
+This project reflects an applied approach to **hospitality growth systems**, combining technology, data, and operational understanding to improve conversion and guest engagement.
+
