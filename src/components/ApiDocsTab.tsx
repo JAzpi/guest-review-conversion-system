@@ -9,25 +9,30 @@ export const ApiDocsTab = () => {
         <CardHeader>
           <div className="flex items-center gap-3">
             <Code className="h-6 w-6 text-primary" />
-            <CardTitle>API de Generación de QR Encriptados</CardTitle>
+            <CardTitle className="text-xl">Encrypted Dynamic QR Generation API</CardTitle>
           </div>
-          <CardDescription className="text-base">
-            Integra la generación de códigos QR encriptados directamente en tu sistema mediante nuestra API REST.
+          <CardDescription className="text-base leading-relaxed">
+            Endpoint REST diseñado para plataformas de PMS, OMS, comunicación con huéspedes y automatización del ciclo de vida.
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-4">
-          <div className="flex items-center gap-2 text-sm text-muted-foreground">
-            <span>Base URL:</span>
-            <code className="bg-muted px-2 py-1 rounded text-foreground font-mono text-xs">
-              https://tu-proyecto.supabase.co/functions/v1
-            </code>
+          <p className="text-muted-foreground leading-relaxed">
+            Genera códigos QR encriptados específicos por reserva que redirigen a los huéspedes a su entorno nativo de reserva, habilitando una activación fluida del ciclo de vida y la interacción.
+          </p>
+          <div>
+            <h4 className="font-semibold mb-3 text-sm text-muted-foreground uppercase tracking-wide">Capacidades clave</h4>
+            <ul className="space-y-2 text-muted-foreground">
+              <li className="flex items-start gap-2"><ArrowRight className="h-4 w-4 mt-1 text-primary shrink-0" /> Generación dinámica de QR basada en reserva</li>
+              <li className="flex items-start gap-2"><ArrowRight className="h-4 w-4 mt-1 text-primary shrink-0" /> Encriptación segura de parámetros</li>
+              <li className="flex items-start gap-2"><ArrowRight className="h-4 w-4 mt-1 text-primary shrink-0" /> Respuesta API en tiempo real</li>
+              <li className="flex items-start gap-2"><ArrowRight className="h-4 w-4 mt-1 text-primary shrink-0" /> Soporte para procesamiento por lotes (batch)</li>
+              <li className="flex items-start gap-2"><ArrowRight className="h-4 w-4 mt-1 text-primary shrink-0" /> Listo para integración en flujos automatizados</li>
+              <li className="flex items-start gap-2"><ArrowRight className="h-4 w-4 mt-1 text-primary shrink-0" /> Diseñado para orquestación dentro de sistemas de ciclo de vida del huésped</li>
+            </ul>
           </div>
-          <div className="flex items-center gap-2 text-sm text-muted-foreground">
-            <span>Autenticación:</span>
-            <code className="bg-muted px-2 py-1 rounded text-foreground font-mono text-xs">
-              Authorization: Bearer YOUR_API_KEY
-            </code>
-          </div>
+          <p className="text-sm text-muted-foreground leading-relaxed border-t pt-4">
+            La API permite a sistemas externos integrar la generación de QR en flujos de engagement automatizados, reduciendo la fricción de acceso y apoyando la interacción con el huésped en el momento adecuado del ciclo de vida.
+          </p>
         </CardContent>
       </Card>
 

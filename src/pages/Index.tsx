@@ -12,11 +12,11 @@ const Index = () => {
           <div className="flex items-center justify-center gap-3 mb-4">
             <QrCode className="h-12 w-12 text-primary" />
             <h1 className="text-5xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-              Sistema de Activación de Conversión / Ciclo de Vida
+              Sistema de Activación de Conversión
             </h1>
           </div>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Reduce la fricción y mejora el acceso del huésped a su reserva en el momento adecuado.
+            Reduce la fricción y mejora el acceso del huésped a su reserva en el momento adecuado para habilitar la activación del ciclo de vida y el engagement en reseñas.
           </p>
         </div>
 
