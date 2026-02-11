@@ -46,8 +46,8 @@ const Index = () => {
           </TabsContent>
         </Tabs>
 
-        <div className="mt-16 text-center">
-          <div className="max-w-3xl mx-auto p-8 bg-card rounded-2xl shadow-card border-2">
+        <div className="mt-16 max-w-4xl mx-auto">
+          <div className="p-8 bg-card rounded-2xl shadow-card border-2">
             <h2 className="text-2xl font-bold mb-4 text-foreground">
               ¿Cómo funciona?
             </h2>
