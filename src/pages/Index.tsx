@@ -1,5 +1,6 @@
 import { SingleQRGenerator } from "@/components/SingleQRGenerator";
 import { BulkQRGenerator } from "@/components/BulkQRGenerator";
+import { ApiDocsTab } from "@/components/ApiDocsTab";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { QrCode } from "lucide-react";
 
@@ -11,21 +12,24 @@ const Index = () => {
           <div className="flex items-center justify-center gap-3 mb-4">
             <QrCode className="h-12 w-12 text-primary" />
             <h1 className="text-5xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-              Generador de QR
+              Sistema de Activación de Conversión / Ciclo de Vida
             </h1>
           </div>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Crea códigos QR para tus reservas de hotel y facilita las reseñas de tus huéspedes
+            Reduce la fricción y mejora el acceso del huésped a su reserva en el momento adecuado.
           </p>
         </div>
 
         <Tabs defaultValue="single" className="max-w-4xl mx-auto">
-          <TabsList className="grid w-full grid-cols-2 mb-8">
+          <TabsList className="grid w-full grid-cols-3 mb-8">
             <TabsTrigger value="single" className="text-lg">
               QR Individual
             </TabsTrigger>
             <TabsTrigger value="bulk" className="text-lg">
               Generación Masiva
+            </TabsTrigger>
+            <TabsTrigger value="api" className="text-lg">
+              API
             </TabsTrigger>
           </TabsList>
           
@@ -35,6 +39,10 @@ const Index = () => {
           
           <TabsContent value="bulk" className="animate-in fade-in duration-500">
             <BulkQRGenerator />
+          </TabsContent>
+
+          <TabsContent value="api" className="animate-in fade-in duration-500">
+            <ApiDocsTab />
           </TabsContent>
         </Tabs>
 
